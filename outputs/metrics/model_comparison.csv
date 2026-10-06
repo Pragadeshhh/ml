@@ -1,0 +1,10 @@
+Model,Type,MAE,MSE,RMSE,R2
+Linear Regression,Baseline,4.7961,38.8037,6.2293,0.0249
+Ridge Regression,Baseline,4.7961,38.804,6.2293,0.0249
+Lasso Regression,Baseline,4.7882,38.8624,6.234,0.0234
+Decision Tree,Baseline,4.4031,34.0472,5.835,0.1444
+Random Forest,Baseline,4.2039,31.814,5.6404,0.2006
+Gradient Boosting,Baseline,4.3222,33.0692,5.7506,0.169
+Ridge (Tuned: alpha=50.0),Tuned,4.7957,38.8155,6.2302,0.0246
+"Random Forest (Tuned: depth=10, trees=150)",Tuned,4.2029,31.7564,5.6353,0.202
+"Gradient Boosting (Tuned: depth=5, lr=0.1)",Tuned,4.3255,32.8719,5.7334,0.174

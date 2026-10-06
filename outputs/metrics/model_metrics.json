@@ -1,0 +1,97 @@
+{
+    "best_model": "Random Forest (Tuned: depth=10, trees=150)",
+    "features": [
+        "GDP_Growth",
+        "Inflation_Rate",
+        "Real_Interest_Rate",
+        "GDP_Per_Capita"
+    ],
+    "target": "Unemployment_Rate",
+    "metrics": {
+        "MAE": 4.2029,
+        "MSE": 31.7564,
+        "RMSE": 5.6353,
+        "R2": 0.202
+    },
+    "linear_coefficients": {
+        "GDP_Growth": -0.5296,
+        "Inflation_Rate": 0.2104,
+        "Real_Interest_Rate": -0.1235,
+        "GDP_Per_Capita": -1.0146
+    },
+    "linear_intercept": 7.6477,
+    "comparison": [
+        {
+            "Model": "Linear Regression",
+            "Type": "Baseline",
+            "MAE": 4.7961,
+            "MSE": 38.8037,
+            "RMSE": 6.2293,
+            "R2": 0.0249
+        },
+        {
+            "Model": "Ridge Regression",
+            "Type": "Baseline",
+            "MAE": 4.7961,
+            "MSE": 38.804,
+            "RMSE": 6.2293,
+            "R2": 0.0249
+        },
+        {
+            "Model": "Lasso Regression",
+            "Type": "Baseline",
+            "MAE": 4.7882,
+            "MSE": 38.8624,
+            "RMSE": 6.234,
+            "R2": 0.0234
+        },
+        {
+            "Model": "Decision Tree",
+            "Type": "Baseline",
+            "MAE": 4.4031,
+            "MSE": 34.0472,
+            "RMSE": 5.835,
+            "R2": 0.1444
+        },
+        {
+            "Model": "Random Forest",
+            "Type": "Baseline",
+            "MAE": 4.2039,
+            "MSE": 31.814,
+            "RMSE": 5.6404,
+            "R2": 0.2006
+        },
+        {
+            "Model": "Gradient Boosting",
+            "Type": "Baseline",
+            "MAE": 4.3222,
+            "MSE": 33.0692,
+            "RMSE": 5.7506,
+            "R2": 0.169
+        },
+        {
+            "Model": "Ridge (Tuned: alpha=50.0)",
+            "Type": "Tuned",
+            "MAE": 4.7957,
+            "MSE": 38.8155,
+            "RMSE": 6.2302,
+            "R2": 0.0246
+        },
+        {
+            "Model": "Random Forest (Tuned: depth=10, trees=150)",
+            "Type": "Tuned",
+            "MAE": 4.2029,
+            "MSE": 31.7564,
+            "RMSE": 5.6353,
+            "R2": 0.202
+        },
+        {
+            "Model": "Gradient Boosting (Tuned: depth=5, lr=0.1)",
+            "Type": "Tuned",
+            "MAE": 4.3255,
+            "MSE": 32.8719,
+            "RMSE": 5.7334,
+            "R2": 0.174
+        }
+    ]
+}
